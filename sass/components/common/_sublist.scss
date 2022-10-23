@@ -1,0 +1,39 @@
+.sublist {
+    margin-top: 15px;
+}
+
+.sublist__item {
+    color: #512b2b;
+    // padding-left: 20px;
+}
+
+.sublist__item::before {
+    content: '';
+    border: 1px solid #ff5f00;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: #ff5f00;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+
+.sublist__btn {
+    margin-top: 10px;
+    border: none;
+    background: none;
+    color: #257886;
+    padding-left: 0;
+}
+
+.sublist__btn::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 7px solid #257886;
+    margin-right: 7px;
+}

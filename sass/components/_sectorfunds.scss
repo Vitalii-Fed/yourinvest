@@ -1,0 +1,90 @@
+.sectorfunds {
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 120px;
+        background-color: $color-bg-secondary;
+        border-radius: 4px;
+    }
+
+    &__sub-title {
+        margin-top: 30px;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: #512b2b;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
+    }
+
+    &__description {
+        margin-top: 10px;
+        font-weight: 400;
+        line-height: 1.71;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
+    }
+}
+
+.sectorfunds__finance {
+    background-image: url(../images/top/786x250_finance.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectorfunds__medicine {
+    background-image: url(../images/top/786x250_medicine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectorfunds__realestate {
+    background-image: url(../images/top/786x250_realestate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectorfunds__sustainability {
+    background-image: url(../images/top/786x250_sustainability.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectorfunds__technology {
+    background-image: url(../images/top/786x250_technology.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    .sectorfunds {
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: calc(33.33% - 30px);
+        }
+    }
+}

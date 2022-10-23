@@ -1,0 +1,117 @@
+.regionalfunds__title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.regionalfunds {
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 120px;
+        background-color: $color-bg-secondary;
+        border-radius: 4px;
+    }
+
+    &__sub-title {
+        margin-top: 30px;
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: #512b2b;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
+    }
+
+    &__description {
+        margin-top: 10px;
+        font-weight: 400;
+        line-height: 1.71;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: start;
+        }
+    }
+}
+
+.regionalfunds__asia {
+    background-image: url(../images/projects/786x250_asia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.regionalfunds__emerging {
+    background-image: url(../images/projects/786x250_emerging.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.regionalfunds__japan {
+    background-image: url(../images/projects/786x250_japan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.regionalfunds__usa {
+    background-image: url(../images/projects/786x250_usa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.regionalfunds__world {
+    background-image: url(../images/projects/786x250_world.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.regionalfunds__europe {
+    background-image: url(../images/projects/786x250_europe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.regionalfunds__sweden {
+    background-image: url(../images/projects/786x250_sweden.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+    .regionalfunds {
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__item {
+            width: calc(33.33% - 30px);
+        }
+    }
+}
+
+// @media screen and (min-width: 1200px) {
+//     .regionalfunds {
+//         &__item {
+//             width: calc(25% - 22.5px);
+//         }
+//     }
+// }

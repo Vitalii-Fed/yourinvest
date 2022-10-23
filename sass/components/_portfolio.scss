@@ -1,0 +1,36 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .projects-wrapper {
+        max-width: 450px;
+    }
+
+    .filter {
+        max-width: 326px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filter {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .projects-wrapper {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .filter {
+        margin-bottom: 50px;
+    }
+}

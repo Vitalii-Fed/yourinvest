@@ -1,0 +1,35 @@
+.invest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.invest__item {
+    max-width: calc(50% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    background-color: #6637372c;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 760px) {
+    .invest {
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .invest__item {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .invest__img {
+        width: 300px;
+        height: 250px;
+    }
+}
